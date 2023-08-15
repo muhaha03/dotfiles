@@ -530,6 +530,7 @@ cmp.setup {
 vim.keymap.set("n", "<F2>", ":NvimTreeToggle D: <cr>",{ silent=true} )
 vim.cmd([[
   au BufReadPost *.txt set syntax=sh
+  au BufReadPost *.rsp set syntax=sh
   set relativenumber
   set ignorecase
   set smartcase
