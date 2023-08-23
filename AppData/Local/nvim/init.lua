@@ -531,6 +531,7 @@ vim.keymap.set("n", "<F2>", ":NvimTreeToggle D: <cr>",{ silent=true} )
 vim.cmd([[
   au BufReadPost,BufRead,BufNewFile,BufWinEnter *.txt set syntax=sh
   au BufReadPost,BufRead,BufNewFile,BufWinEnter *.rsp set syntax=sh
+  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.log set syntax=sh
   set relativenumber
   set ignorecase
   set smartcase
