@@ -529,8 +529,8 @@ cmp.setup {
 -- muhaha03
 vim.keymap.set("n", "<F2>", ":NvimTreeToggle D: <cr>",{ silent=true} )
 vim.cmd([[
-  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.txt,*.rsp,*.cfg,*.ini,*.log,*.*.log setf sh
-  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.log,*.*.log setf sql
+  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.txt,*.rsp,*.cfg,*.ini,*.log,*.*.log set syntax=sh
+  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.log,*.*.log set syntax=sql
 --  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.rsp set syntax=sh
 --  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.cfg set syntax=sh
 --  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.ini set syntax=sh
