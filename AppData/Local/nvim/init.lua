@@ -533,7 +533,7 @@ vim.cmd([[
 --  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.rsp set syntax=sh
 --  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.cfg set syntax=sh
 --  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.ini set syntax=sh
---  au BufRead,BufNewFile *.log set ft=sh
+----  au BufRead,BufNewFile *.log set ft=sh
   set relativenumber
   set ignorecase
   set smartcase
