@@ -527,10 +527,10 @@ cmp.setup {
 -- vim: ts=2 sts=2 sw=2 et
 --
 -- muhaha03
+--au BufReadPost,BufRead,BufNewFile,BufWinEnter *.txt,*.rsp,*.cfg,*.ini set syntax=sh
 vim.keymap.set("n", "<F2>", ":NvimTreeToggle D: <cr>",{ silent=true} )
 vim.cmd([[
-  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.txt,*.rsp,*.cfg,*.ini set syntax=sh
-  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.log,*.*.log set syntax=sql
+  au BufReadPost,BufRead,BufNewFile,BufWinEnter * if &syntax == '' | set syntax=sh | endif
   set relativenumber
   set ignorecase
   set smartcase
