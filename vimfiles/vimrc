@@ -40,9 +40,7 @@ function MyDiff()
 endfunction
 
 colo murphy
-autocmd BufRead,BufNewFile,BufWinEnter *.txt set syntax=sh
-autocmd BufRead,BufNewFile,BufWinEnter *.rsp set syntax=sh
-au BufReadPost *.txt set syntax=sh
+au BufReadPost,BufRead,BufNewFile,BufWinEnter * if &syntax == '' | set syntax=sh | endif
 au WinEnter * setlocal cursorline
 au WinLeave * setlocal nocursorline
 au BufWritePre * :%s/\s\+$//e
