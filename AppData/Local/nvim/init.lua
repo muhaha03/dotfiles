@@ -526,11 +526,13 @@ cmp.setup {
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 --
+--
 -- muhaha03
 --au BufReadPost,BufRead,BufNewFile,BufWinEnter *.txt,*.rsp,*.cfg,*.ini set syntax=sh
 vim.keymap.set("n", "<F2>", ":NvimTreeToggle D: <cr>",{ silent=true} )
 vim.cmd([[
   au BufReadPost,BufRead,BufNewFile,BufWinEnter * if &syntax == '' | set syntax=sh | endif
+  au BufReadPost,BufRead,BufNewFile,BufWinEnter *.txt,*.rsp,*.cfg,*.ini,*.log set syntax=sh
   set relativenumber
   set ignorecase
   set smartcase
