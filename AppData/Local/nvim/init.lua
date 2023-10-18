@@ -537,5 +537,5 @@ vim.cmd([[
   set ignorecase
   set smartcase
   set clipboard+=unnamed,unnamedplus
-  set guifont=Cascadia\ Code:h14
+  set guifont=Cascadia\ Code:h15
 ]])
